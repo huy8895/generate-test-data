@@ -81,16 +81,19 @@ fs.writeFile(fileScriptTest, createTestScript(scriptTest), err => {
     if (err) {
         console.error(err)
     }
+    console.log("write to fileScriptTest done !!!!!")
 })
 
 fs.writeFile(filePretest, scriptPreTest, err => {
     if (err) {
         console.error(err)
     }
+    console.log("write to filePretest done !!!!!")
 })
 
 fs.writeFile(fileRequestBody, JSON.stringify(rawData), err => {
     if (err) {
         console.error(err)
     }
+    console.log("write to fileRequestBody done !!!!!")
 })
