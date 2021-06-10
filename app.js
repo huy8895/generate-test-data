@@ -2,6 +2,7 @@ const fs = require('fs');
 const filePretest = 'out/scriptPreTest';
 const fileScriptTest = 'out/scriptTest';
 const fileRequestBody = 'out/requestBody';
+const outputFolder = 'out';
 
 let rawFile = fs.readFileSync('swagger-body.json');
 let rawData = JSON.parse(rawFile);
@@ -72,6 +73,9 @@ function createTestScript(scriptTest) {
     }`;
 }
 
+if (!fs.existsSync(outputFolder)){
+    fs.mkdirSync(outputFolder);
+}
 
 fs.writeFile(fileScriptTest, createTestScript(scriptTest), err => {
     if (err) {
