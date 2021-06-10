@@ -1,39 +1,201 @@
 {
-    "id": "string",
-    "jobCode": "string",
-    "jobName": "string",
-    "saveType": "string",
-    "nameOfBusiness": "string",
-    "departmentName": "string",
-    "positionName": "string",
-    "positionCode": "string",
-    "workingMonths": "string",
-    "contractTypeCode": "string",
-    "contractTypeName": "string",
-    "companyCombinationAddressCode": "string",
-    "companyCombinationAddressName": "string",
-    "companyProvinceCode": "string",
-    "companyProvinceName": "string",
-    "companyDistrictCode": "string",
-    "companyDistrictName": "string",
-    "companyWardCode": "string",
-    "companyWardName": "string",
-    "companyExactAddress": "string",
+  "id": {
+    "id": "{{id}}",
+    "jobCode": "{{jobCode}}",
+    "jobName": "{{jobName}}",
+    "saveType": "{{saveType}}",
+    "nameOfBusiness": "{{nameOfBusiness}}",
+    "departmentName": "{{departmentName}}",
+    "positionName": "{{positionName}}",
+    "positionCode": "{{positionCode}}",
+    "workingMonths": "{{workingMonths}}",
+    "contractTypeCode": "{{contractTypeCode}}",
+    "contractTypeName": "{{contractTypeName}}",
+    "companyCombinationAddressCode": "{{companyCombinationAddressCode}}",
+    "companyCombinationAddressName": "{{companyCombinationAddressName}}",
+    "companyProvinceCode": "{{companyProvinceCode}}",
+    "companyProvinceName": "{{companyProvinceName}}",
+    "companyDistrictCode": "{{companyDistrictCode}}",
+    "companyDistrictName": "{{companyDistrictName}}",
+    "companyWardCode": "{{companyWardCode}}",
+    "companyWardName": "{{companyWardName}}",
+    "companyExactAddress": {
+      "obj": {
+        "subObj": {
+          "incomeTypeCode": "{{incomeTypeCode}}",
+          "incomeTypeName": "{{incomeTypeName}}"
+        }
+      },
+      "incomes": [
+        {
+          "incomeTypeCode": "{{incomeTypeCode_0}}",
+          "incomeTypeName": "{{incomeTypeName_0}}",
+          "incomePerMonth": "{{incomePerMonth_0}}"
+        },
+        {
+          "incomeTypeCode": "{{incomeTypeCode_1}}",
+          "incomeTypeName": "{{incomeTypeName_1}}",
+          "incomePerMonth": [
+            {
+              "incomeTypeCode": "{{incomeTypeCode_0}}",
+              "incomeTypeName": "{{incomeTypeName_0}}",
+              "incomePerMonth": "{{incomePerMonth_0}}"
+            },
+            {
+              "incomeTypeCode": "{{incomeTypeCode_1}}",
+              "incomeTypeName": "{{incomeTypeName_1}}",
+              "incomePerMonth": "{{incomePerMonth_1}}"
+            },
+            {
+              "incomeTypeCode": "{{incomeTypeCode_2}}",
+              "incomeTypeName": "{{incomeTypeName_2}}",
+              "incomePerMonth": "{{incomePerMonth_2}}"
+            }
+          ]
+        }
+      ]
+    },
     "incomes": [
       {
-        "incomeTypeCode": "string",
-        "incomeTypeName": "string",
-        "incomePerMonth": "string"
+        "incomeTypeCode": "{{incomeTypeCode_0}}",
+        "incomeTypeName": "{{incomeTypeName_0}}",
+        "incomes": [
+          {
+            "incomeTypeCode": "{{incomeTypeCode_0}}",
+            "incomeTypeName": "{{incomeTypeName_0}}",
+            "incomePerMonth": "{{incomePerMonth_0}}"
+          },
+          {
+            "incomeTypeCode": "{{incomeTypeCode_1}}",
+            "incomeTypeName": "{{incomeTypeName_1}}",
+            "incomePerMonth": [
+              {
+                "incomeTypeCode": "{{incomeTypeCode_0}}",
+                "incomeTypeName": "{{incomeTypeName_0}}",
+                "incomePerMonth": "{{incomePerMonth_0}}"
+              },
+              {
+                "incomeTypeCode": "{{incomeTypeCode_1}}",
+                "incomeTypeName": "{{incomeTypeName_1}}",
+                "incomePerMonth": "{{incomePerMonth_1}}"
+              },
+              {
+                "incomeTypeCode": "{{incomeTypeCode_2}}",
+                "incomeTypeName": "{{incomeTypeName_2}}",
+                "incomePerMonth": "{{incomePerMonth_2}}"
+              }
+            ]
+          }
+        ]
       },
       {
-        "incomeTypeCode": "string",
-        "incomeTypeName": "string",
-        "incomePerMonth": "string"
+        "incomeTypeCode": "{{incomeTypeCode_1}}",
+        "incomeTypeName": "{{incomeTypeName_1}}",
+        "incomePerMonth": "{{incomePerMonth_1}}"
       },
       {
-        "incomeTypeCode": "string",
-        "incomeTypeName": "string",
-        "incomePerMonth": "string"
+        "incomeTypeCode": "{{incomeTypeCode_2}}",
+        "incomeTypeName": "{{incomeTypeName_2}}",
+        "incomePerMonth": "{{incomePerMonth_2}}"
       }
     ]
-  }
+  },
+  "jobCode": "{{jobCode}}",
+  "jobName": "{{jobName}}",
+  "saveType": "{{saveType}}",
+  "nameOfBusiness": "{{nameOfBusiness}}",
+  "departmentName": "{{departmentName}}",
+  "positionName": "{{positionName}}",
+  "positionCode": "{{positionCode}}",
+  "workingMonths": "{{workingMonths}}",
+  "contractTypeCode": "{{contractTypeCode}}",
+  "contractTypeName": "{{contractTypeName}}",
+  "companyCombinationAddressCode": "{{companyCombinationAddressCode}}",
+  "companyCombinationAddressName": "{{companyCombinationAddressName}}",
+  "companyProvinceCode": "{{companyProvinceCode}}",
+  "companyProvinceName": "{{companyProvinceName}}",
+  "companyDistrictCode": "{{companyDistrictCode}}",
+  "companyDistrictName": "{{companyDistrictName}}",
+  "companyWardCode": "{{companyWardCode}}",
+  "companyWardName": "{{companyWardName}}",
+  "companyExactAddress": {
+    "obj": {
+      "subObj": {
+        "incomeTypeCode": "{{incomeTypeCode}}",
+        "incomeTypeName": "{{incomeTypeName}}"
+      }
+    },
+    "incomes": [
+      {
+        "incomeTypeCode": "{{incomeTypeCode_0}}",
+        "incomeTypeName": "{{incomeTypeName_0}}",
+        "incomePerMonth": "{{incomePerMonth_0}}"
+      },
+      {
+        "incomeTypeCode": "{{incomeTypeCode_1}}",
+        "incomeTypeName": "{{incomeTypeName_1}}",
+        "incomePerMonth": [
+          {
+            "incomeTypeCode": "{{incomeTypeCode_0}}",
+            "incomeTypeName": "{{incomeTypeName_0}}",
+            "incomePerMonth": "{{incomePerMonth_0}}"
+          },
+          {
+            "incomeTypeCode": "{{incomeTypeCode_1}}",
+            "incomeTypeName": "{{incomeTypeName_1}}",
+            "incomePerMonth": "{{incomePerMonth_1}}"
+          },
+          {
+            "incomeTypeCode": "{{incomeTypeCode_2}}",
+            "incomeTypeName": "{{incomeTypeName_2}}",
+            "incomePerMonth": "{{incomePerMonth_2}}"
+          }
+        ]
+      }
+    ]
+  },
+  "incomes": [
+    {
+      "incomeTypeCode": "{{incomeTypeCode_0}}",
+      "incomeTypeName": "{{incomeTypeName_0}}",
+      "incomes": [
+        {
+          "incomeTypeCode": "{{incomeTypeCode_0}}",
+          "incomeTypeName": "{{incomeTypeName_0}}",
+          "incomePerMonth": "{{incomePerMonth_0}}"
+        },
+        {
+          "incomeTypeCode": "{{incomeTypeCode_1}}",
+          "incomeTypeName": "{{incomeTypeName_1}}",
+          "incomePerMonth": [
+            {
+              "incomeTypeCode": "{{incomeTypeCode_0}}",
+              "incomeTypeName": "{{incomeTypeName_0}}",
+              "incomePerMonth": "{{incomePerMonth_0}}"
+            },
+            {
+              "incomeTypeCode": "{{incomeTypeCode_1}}",
+              "incomeTypeName": "{{incomeTypeName_1}}",
+              "incomePerMonth": "{{incomePerMonth_1}}"
+            },
+            {
+              "incomeTypeCode": "{{incomeTypeCode_2}}",
+              "incomeTypeName": "{{incomeTypeName_2}}",
+              "incomePerMonth": "{{incomePerMonth_2}}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "incomeTypeCode": "{{incomeTypeCode_1}}",
+      "incomeTypeName": "{{incomeTypeName_1}}",
+      "incomePerMonth": "{{incomePerMonth_1}}"
+    },
+    {
+      "incomeTypeCode": "{{incomeTypeCode_2}}",
+      "incomeTypeName": "{{incomeTypeName_2}}",
+      "incomePerMonth": "{{incomePerMonth_2}}"
+    }
+  ]
+}
