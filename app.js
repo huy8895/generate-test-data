@@ -10,24 +10,24 @@ let scriptTest = '';
 let scriptPreTest = '';
 
 
-Object.keys(rawData).forEach(e => generateReqBody(e, rawData))
-Object.keys(rawData).forEach(e => scriptTest += generateTest(e));
-Object.keys(rawData).forEach(e => scriptPreTest += generatePreTest(e))
+Object.keys(rawData).forEach(e => generateData(e, rawData))
 
-function generateReqBody(target, raw, index) {
+function generateData(target, raw, index) {
     const rawElement = raw[target];
     const isValidType = typeof rawElement == "object"
         && rawElement != null
         && rawElement != undefined
         && rawElement != NaN;
-        
+
     if (isValidType) {
-        Object.keys(rawElement).forEach(e => generateReqBody(e, rawElement, target))
+        Object.keys(rawElement).forEach(e => generateData(e, rawElement, target))
     } else {
         if (isNumeric(index)) {
             raw[target] = generateVariable(target + '_' + index);
+            scriptPreTest += generatePreTest(target + '_' + index)
         } else {
             raw[target] = generateVariable(target);
+            scriptPreTest += generatePreTest(target);
         }
     }
 
@@ -50,32 +50,6 @@ function generatePreTest(fieldName) {
 
 function generateVariable(fieldName) {
     return `{{${fieldName}}}`;
-}
-
-function createTestScript(scriptTest) {
-    return `if (pm.response.code == 200) {
-        pm.sendRequest({
-            url: pm.environment.get("apigetdetail"),
-            method: 'POST',
-            header: {
-                'content-type': 'application/json',
-                'x-site-code': pm.environment.get("x-site-code"),
-                'Authorization': 'Bearer ' + pm.environment.get("token")
-            },
-            body: {
-                mode: 'raw',
-                raw: JSON.stringify({ id: pm.environment.get("loanId") })
-            }
-        }, function (err, res) {
-            let responseData = res.json();
-            console.log(res.json());
-    
-            //generate test case:
-    
-            ${scriptTest}
-    
-        });
-    }`;
 }
 
 if (!fs.existsSync(outputFolder)) {
