@@ -16,7 +16,12 @@ Object.keys(rawData).forEach(e => scriptPreTest += generatePreTest(e))
 
 function generateReqBody(target, raw, index) {
     const rawElement = raw[target];
-    if (typeof rawElement == "object") {
+    const isValidType = typeof rawElement == "object"
+        && rawElement != null
+        && rawElement != undefined
+        && rawElement != NaN;
+        
+    if (isValidType) {
         Object.keys(rawElement).forEach(e => generateReqBody(e, rawElement, target))
     } else {
         if (isNumeric(index)) {
@@ -73,7 +78,7 @@ function createTestScript(scriptTest) {
     }`;
 }
 
-if (!fs.existsSync(outputFolder)){
+if (!fs.existsSync(outputFolder)) {
     fs.mkdirSync(outputFolder);
 }
 

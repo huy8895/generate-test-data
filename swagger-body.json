@@ -1,12 +1,39 @@
 {
-    "version": "0.2.0",
-    "configurations": [
-        {
-            "type": "pwa-chrome",
-            "request": "launch",
-            "name": "Launch Chrome against localhost",
-            "url": "http://localhost:8080",
-            "webRoot": "${workspaceFolder}"
-        }
-    ]
+    "access_token": "eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJxWmFsVHcydEhnUEdxSmp4WUxOcUdweGpSV0wzazl0NDU0Y1JDY25kaXFzIn0.eyJleHAiOjE2MjMzNzgxMDEsImlhdCI6MTYyMzM0MjEwMSwianRpIjoiOTM1NGRmZDItM2UyOS00YjUwLTkzZTAtM2VlMzhlNmFjMDJhIiwiaXNzIjoiaHR0cHM6Ly9tY2Rldi1rZXljbG9hay5tY3JlZGl0LmNvbS52bi9hdXRoL3JlYWxtcy9tb2JpbGUtZm9yLXNhbGUiLCJhdWQiOiJhY2NvdW50Iiwic3ViIjoiZDZhMTRhZTgtMjY4My00NzcwLThhMDYtMDM1MjFhZTQ2MDIzIiwidHlwIjoiQmVhcmVyIiwiYXpwIjoidXNlci1zZXJ2aWNlIiwic2Vzc2lvbl9zdGF0ZSI6ImI4M2E3YjllLTFhNWMtNDVkYi1iM2JkLTVlNjIxMjVmODRiZiIsImFjciI6IjEiLCJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsib2ZmbGluZV9hY2Nlc3MiLCJ1bWFfYXV0aG9yaXphdGlvbiJdfSwicmVzb3VyY2VfYWNjZXNzIjp7ImFjY291bnQiOnsicm9sZXMiOlsibWFuYWdlLWFjY291bnQiLCJtYW5hZ2UtYWNjb3VudC1saW5rcyIsInZpZXctcHJvZmlsZSJdfX0sInNjb3BlIjoicHJvZmlsZSBlbWFpbCIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwibmFtZSI6IlRlc3RlcjggdGVzdGVyIGxhc3RuYW1lIiwicHJlZmVycmVkX3VzZXJuYW1lIjoidGVzdGVyOCIsImdpdmVuX25hbWUiOiJUZXN0ZXI4IiwiZmFtaWx5X25hbWUiOiJ0ZXN0ZXIgbGFzdG5hbWUiLCJlbWFpbCI6InRlc3RlcjhAZ21haWwuY29tIn0.g0mdpdR6lNGPx2UP4C56Le8aWrSBTej7Ckr4vJUHlt4T82p8-q-TLhKwHUygjqCtJm35leu6q-AtN9jGZRqCHO3MLUVxl9XwLmLE2mOkcpf09Z3kSekl4yLYWBinx89la3SUx-1EsJYQLgwbYdQ9QQkFSXsjEXLt1piHwKIK92YeSxztagjfCL2UtrFCX5hvicDPWD7vIpMdDm57ndMRsgK7u2BuXy10RFz5zfdxhWNR7aKO6HjPN5mlXeOn0qAzLwWUWtCTjq9f-lXh-qiaIbzYKYCZV3PJun2CpTXwOz3S1c33Eb7it7nkrZWHgqn_ErYhhtcloa8pdlVNONHtug",
+    "expires_in": 36000,
+    "refresh_expires_in": 1800,
+    "refresh_token": "eyJhbGciOiJIUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICI0YjFkODk3OS0zNDkwLTQ2ODYtOGJkMC00ZDBlN2JkZWVjNzEifQ.eyJleHAiOjE2MjMzNDM5MDEsImlhdCI6MTYyMzM0MjEwMSwianRpIjoiNTVjMzk3OGItYmE0Ny00MDA3LWIyNjctZDdiMzY5OWU1ZGQ3IiwiaXNzIjoiaHR0cHM6Ly9tY2Rldi1rZXljbG9hay5tY3JlZGl0LmNvbS52bi9hdXRoL3JlYWxtcy9tb2JpbGUtZm9yLXNhbGUiLCJhdWQiOiJodHRwczovL21jZGV2LWtleWNsb2FrLm1jcmVkaXQuY29tLnZuL2F1dGgvcmVhbG1zL21vYmlsZS1mb3Itc2FsZSIsInN1YiI6ImQ2YTE0YWU4LTI2ODMtNDc3MC04YTA2LTAzNTIxYWU0NjAyMyIsInR5cCI6IlJlZnJlc2giLCJhenAiOiJ1c2VyLXNlcnZpY2UiLCJzZXNzaW9uX3N0YXRlIjoiYjgzYTdiOWUtMWE1Yy00NWRiLWIzYmQtNWU2MjEyNWY4NGJmIiwic2NvcGUiOiJwcm9maWxlIGVtYWlsIn0.wycwjSNXLXMiS_e4Fm0S6M7MfqJ1F0B7AQjMlxG8UjU",
+    "token_type": "Bearer",
+    "id_token": null,
+    "not_before_policy": 1623319399,
+    "session_state": "b83a7b9e-1a5c-45db-b3bd-5e62125f84bf",
+    "scope": "profile email",
+    "user_profile": {
+        "keycloakId": "d6a14ae8-2683-4770-8a06-03521ae46023",
+        "username": "tester8",
+        "cif": null,
+        "fullName": null,
+        "dob": null,
+        "phoneNumber": null,
+        "redeemCode": null,
+        "email": null,
+        "cardId": null,
+        "cardType": null,
+        "cardIssuedAt": null,
+        "cardExpiredAt": null,
+        "gender": null,
+        "address": null,
+        "province": null,
+        "district": null,
+        "city": null,
+        "avatar": null,
+        "userType": null,
+        "isEKYC": false,
+        "isMatching": null,
+        "isInhouse": true,
+        "position": "SALE",
+        "isExistSocial": null
+    },
+    "collaborator_status_profile": null,
+    "user_social": null
 }
