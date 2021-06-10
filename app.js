@@ -1,7 +1,7 @@
 const fs = require('fs');
 const filePretest = 'out/scriptPreTest';
 const fileScriptTest = 'out/scriptTest';
-const fileRequestBody = 'out/requestBody';
+const fileRequestBody = 'out/requestBody.json';
 const outputFolder = 'out';
 
 let rawFile = fs.readFileSync('swagger-body.json');
