@@ -1,0 +1,39 @@
+{
+    "id": "string",
+    "jobCode": "string",
+    "jobName": "string",
+    "saveType": "string",
+    "nameOfBusiness": "string",
+    "departmentName": "string",
+    "positionName": "string",
+    "positionCode": "string",
+    "workingMonths": "string",
+    "contractTypeCode": "string",
+    "contractTypeName": "string",
+    "companyCombinationAddressCode": "string",
+    "companyCombinationAddressName": "string",
+    "companyProvinceCode": "string",
+    "companyProvinceName": "string",
+    "companyDistrictCode": "string",
+    "companyDistrictName": "string",
+    "companyWardCode": "string",
+    "companyWardName": "string",
+    "companyExactAddress": "string",
+    "incomes": [
+      {
+        "incomeTypeCode": "string",
+        "incomeTypeName": "string",
+        "incomePerMonth": "string"
+      },
+      {
+        "incomeTypeCode": "string",
+        "incomeTypeName": "string",
+        "incomePerMonth": "string"
+      },
+      {
+        "incomeTypeCode": "string",
+        "incomeTypeName": "string",
+        "incomePerMonth": "string"
+      }
+    ]
+  }
