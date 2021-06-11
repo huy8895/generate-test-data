@@ -1,6 +1,6 @@
 const fs = require('fs');
-const filePretest = 'out/scriptPreTest';
-const fileScriptTest = 'out/scriptTest';
+const filePretest = 'out/scriptPreTest.txt';
+const fileScriptTest = 'out/scriptTest.txt';
 const fileRequestBody = 'out/requestBody.json';
 const outputFolder = 'out';
 
