@@ -56,7 +56,7 @@ if (!fs.existsSync(outputFolder)) {
     fs.mkdirSync(outputFolder);
 }
 
-fs.writeFile(fileScriptTest, createTestScript(scriptTest), err => {
+fs.writeFile(fileScriptTest, generateTest(scriptTest), err => {
     if (err) {
         console.error(err)
     }
